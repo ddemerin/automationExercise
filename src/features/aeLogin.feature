@@ -1,6 +1,6 @@
 @test @regression
 Feature: User Login
-    The user should be able to navigate to login page to login or signup
+    The user should be able to navigate to login page to log into the website
     Scenario: Successful login with valid credentials
         Given I navigate to the login page
         When I enter a valid email and password
