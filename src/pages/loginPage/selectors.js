@@ -18,6 +18,5 @@ export const selectors = {
     emailSignupField: () => {
         const selector = '[data-qa="signup-email"]'
         return $(selector);
-    },
-    
+    }
 }

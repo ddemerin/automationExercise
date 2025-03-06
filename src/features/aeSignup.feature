@@ -8,3 +8,9 @@ Feature: User Signup
         Then I should be redirected to the account creation form
         When I complete the form and submit
         And I should see a success message 
+
+    Scenario: Signup attempt with an already registered email
+        Given I navigate to the signup page
+        When I enter an already regsitered email
+        And I click the signup button
+        Then I should see an error message "Email Address already exists!"
