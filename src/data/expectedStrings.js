@@ -1,7 +1,7 @@
 const returnedText = {
     headers: {
         allProducts: "ALL PRODUCTS",
-        featuredItems: "FEATURED ITEMS",
+        featuredItems: "FEATURES ITEMS",
         recommendedItems: "RECOMMENDED ITEMS"
     }
 }
