@@ -142,7 +142,62 @@ const returnedText = {
             }
         },
         kids: {
-
+            dress: {
+                sleevesBluePink: {
+                    name: "Sleeve Top and Short - Blue and Pink",
+                    price: "Rs. 478"
+                },
+                unicornGown: {
+                    name: "Sleeveless Unicorn Patch Gown - Pink",
+                    price: "Rs. 1050"
+                },
+                uullDress: {
+                    name: "Cotton Mull Embroidered Dress",
+                    price: "Rs. 1190"
+                },
+                indieMickeyDress: {
+                    name: "Blue Cotton Indie Mickey Dress",
+                    price: "Rs. 1530"
+                },
+                maxiFancyDress: {
+                    name: "Long Maxi Tulle Fancy Dress Up Outfits -Pink",
+                    price: "Rs. 1600"
+                },
+                unicornPrintDress: {
+                    name: "Sleeveless Unicorn Print Fit & Flare Net Dress - Multi",
+                    price: "Rs. 1100"
+                }
+            },
+            topsTshirts: {
+                printedTop: {
+                    name: "Sleeves Printed Top - White",
+                    price: "Rs. 499"
+                },
+                schiffliTop: {
+                    name: "Half Sleeves Top Schiffli Detailing - Pink",
+                    price: "Rs. 359"
+                },
+                frozenTops: {
+                    name: "Frozen Tops For Kids",
+                    price: "Rs. 278"
+                },
+                topCherry: {
+                    name: "Full Sleeves Top Cherry - Pink",
+                    price: "Rs. 679"
+                },
+                printedShoulder: {
+                    name: "Printed Off Shoulder Top - White",
+                    price: "Rs. 315"
+                },
+                girlsPandaShirt: {
+                    name: "Little Girls Mr. Panda Shirt",
+                    price: "Rs. 1200"
+                },
+                blockedShirt: {
+                    name: "Colour Blocked Shirt - Sky Blue",
+                    price: "Rs. 849"
+                }
+            }
         }
     }
 }
