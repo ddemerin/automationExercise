@@ -1,5 +1,3 @@
-import { selectors as productSelectors } from '../../components/products/selectors.js';
-
 export const selectors = {
     allProductsHeader: () => {
         const selector = '[class="title text-center"]'
@@ -9,14 +7,16 @@ export const selectors = {
     //     const selector = 'body > section:nth-child(3) > div > div > div.col-sm-9.padding-right > div > div:nth-child(3) > div > div.single-products > div.productinfo.text-center > p'
     //     return $(selector);
     // }
-    ...productSelectors,
-    productName: (name) => {
-        const selector = `.productinfo.text-center p*=${name}`
+    salesImage: () => {
+        const selector = '[id="sale_image"]'
         return $(selector);
     },
-    productPrice: (price) => {
-        const selector = `.productinfo.text-center h2*=${price}`
+    searchBar: () => {
+        const selector = '[id="search_product"]'
         return $(selector);
     },
-    
+    searchButton: () => {
+        const selector = '[id="submit_search"]'
+        return $(selector);
+    }
 }

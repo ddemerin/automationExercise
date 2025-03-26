@@ -11,7 +11,7 @@
 // })
 
 // Then('the Product page loads', async function () {
-//     await productPage.allProducts.waitForDispalyed({ timeout: 3000 });
+//     await productPage.allProducts.waitForDisplayed({ timeout: 3000 });
 // })
 
 // Given('the Product page has a product header', async function () {
