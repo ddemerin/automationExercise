@@ -1,5 +1,3 @@
-import { selectors as productSelectors } from '../../components/products/selectors.js';
-
 export const selectors = {
     productSection: () => {
         const selector = '[class="features_items"]'
@@ -13,7 +11,6 @@ export const selectors = {
         const selector = '.product-image-wrapper'
         return $(selector);
     },
-    ...productSelectors,
     productName: (name) => {
         const selector = '.productinfo.text-center p'
         return $(selector);
