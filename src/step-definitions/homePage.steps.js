@@ -19,7 +19,7 @@ Then ('the Featured Items section displays', async function () {
     await homePage.featuredItemsSection.waitForDisplayed({ timeout: 3000 });
 })
 
-Then ('the Featured Items header displays', async function () {
+Then ('the Featured Items header displays text correctly', async function () {
     await homePage.featuredItemsHeaderText.waitForDisplayed({ timeout: 3000});
     await expect(homePage.featuredItemsHeaderText).toHaveText(expectedStrings.headers.featuredItems);
 })
@@ -36,7 +36,7 @@ Then ('the Recommended Items section displays', async function () {
     await homePage.recommendedItemsSection.waitForDisplayed({ timeout: 3000 });
 })
 
-Then ('the Recommended Items header displays', async function () {
+Then ('the Recommended Items header displays text correctly', async function () {
     await homePage.recommendedItemsHeaderText.waitForDisplayed({ timeout: 3000});
     await expect(homePage.recommendedItemsHeaderText).toHaveText(expectedStrings.headers.recommendedItems);
 })

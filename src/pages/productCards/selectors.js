@@ -3,6 +3,10 @@ export const selectors = {
         const selector = '[class="features_items"]'
         return $(selector);
     },
+    productSectionHeaderText: () => {
+        const selector = '[class="features_items"] > h2'
+        return $(selector);
+    },
     productGrid: () => {
         const selector = '.features_items .col-sm-4'
         return $(selector);

@@ -1,6 +1,6 @@
 export const selectors = {
     mainCarousel: () => {
-        const selector = '[id="slider-carousel"]'
+        const selector = '[id="slider"]'
         return $(selector);
     },
     

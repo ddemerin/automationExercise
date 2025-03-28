@@ -1,8 +1,7 @@
+import { selectors as productSelectors } from '../productCards/selectors.js';
+
 export const selectors = {
-    allProductsHeader: () => {
-        const selector = '[class="title text-center"]'
-        return $(selector);
-    },
+    ...productSelectors,
     salesImage: () => {
         const selector = '[id="sale_image"]'
         return $(selector);
@@ -14,5 +13,5 @@ export const selectors = {
     searchButton: () => {
         const selector = '[id="submit_search"]'
         return $(selector);
-    }
+    }  
 }
