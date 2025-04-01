@@ -16,19 +16,19 @@ export const selectors = {
         return $(selector);
     },
     productName: (name) => {
-        const selector = '.productinfo.text-center p'
+        const selector = `.productinfo.text-center p:contains(${name})`
         return $(selector);
     },
     hoverProductName: (name) => {
-        const selector = '.overlay-content p'
+        const selector = `.overlay-content p:contains(${name})`
         return $(selector);
     },
     productPrice: (price) => {
-        const selector = '.productinfo.text-center h2'
+        const selector = `.productinfo.text-center h2:contains(${price})`
         return $(selector);
     },
     hoverProductPrice: (price) => {
-        const selector = '.overlay-content h2'
+        const selector = `.overlay-content h2:contains(${price})`
         return $(selector);
     },
     addToCartButton: () => {
