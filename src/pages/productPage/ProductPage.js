@@ -34,4 +34,7 @@ export class ProductPage {
     get viewCartButton () {
         return selectors.viewCartButton();
     }
+    get scrollUpButton () {
+        return selectors.scrollUpButton();
+    }
 }

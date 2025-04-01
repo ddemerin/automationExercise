@@ -1,46 +1,50 @@
 export const selectors = {
     productSection: () => {
-        const selector = '[class="features_items"]'
+        const selector = '[class="features_items"]';
         return $(selector);
     },
     productSectionHeaderText: () => {
-        const selector = '[class="features_items"] > h2'
+        const selector = '[class="features_items"] > h2';
         return $(selector);
     },
     productGrid: () => {
-        const selector = '.features_items .col-sm-4'
+        const selector = '.features_items .col-sm-4';
         return $(selector);
     },
-    productCard: () => {
-        const selector = '.product-image-wrapper'
-        return $(selector);
+    productCard: (name) => {
+        const selector = `.productinfo.text-center p:contains(${name})`;
+        return $(selector).closest('.product-image-wrapper');
     },
     productName: (name) => {
-        const selector = `.productinfo.text-center p:contains(${name})`
-        return $(selector);
+        const selector = this.productCard(name);
+        return $(selector).find('.productinfo.text-center p');
     },
     hoverProductName: (name) => {
-        const selector = `.overlay-content p:contains(${name})`
-        return $(selector);
+        const selector = this.productCard(name);
+        return $(selector).find('.overlay-content p');
     },
-    productPrice: (price) => {
-        const selector = `.productinfo.text-center h2:contains(${price})`
-        return $(selector);
+    productPrice: (name) => {
+        const selector = this.productCard(name);
+        return $(selector).find('.productinfo.text-center h2');
     },
-    hoverProductPrice: (price) => {
-        const selector = `.overlay-content h2:contains(${price})`
-        return $(selector);
+    productImage: (name) => {
+        const selector = this.productCard(name);
+        return $(selector).find('.productinfo.text-center img');
     },
-    addToCartButton: () => {
-        const selector = '.productinfo.text-center .add-to-cart'
-        return $(selector);
+    hoverProductPrice: (name) => {
+        const selector = this.productCard(name);
+        return $(selector).find('.overlay-content h2');
     },
-    hoverAddToCart: () => {
-        const selector = '.overlay-content .add-to-cart'
-        return $(selector);
+    addToCartButton: (name) => {
+        const selector = this.productCard(name);
+        return $(selector).find('.productinfo.text-center .add-to-cart');
     },
-    viewCartButton: () => {
-        const selector = '.choose'
-        return $(selector);
+    hoverAddToCart: (name) => {
+        const selector = this.productCard(name);
+        return $(selector).find('.overlay-content .add-to-cart');
+    },
+    viewCartButton: (name) => {
+        const selector = this.productCard(name);
+        return $(selector).find('.choose');
     }
 }

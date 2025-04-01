@@ -3,7 +3,7 @@ import { selectors as recommendedItemsSelectors } from '../recommendedItems/sele
 
 export const selectors = {
     title: () => {
-        const selector = '[class="logo pull-left"]'
+        const selector = '[class="logo pull-left"]';
         return $(selector);
     },
     ...productSelectors,
